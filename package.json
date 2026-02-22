@@ -15,7 +15,7 @@
   "lint-staged": {
     "*.{ts,tsx}": [
       "eslint . --fix --cache --max-warnings=0",
-      "prettier --write"
+      "prettier --write --ignore-unknown"
     ]
   },
   "dependencies": {
@@ -29,6 +29,8 @@
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
