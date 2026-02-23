@@ -41,6 +41,7 @@ const eslintConfig = defineConfig([
       'fsd-lint/forbidden-imports': 'off',
       'fsd-lint/no-cross-slice-dependency': 'off',
       'fsd-lint/no-global-store-imports': 'off',
+      'fsd-lint/ordered-imports': 'off',
     },
   },
   prettierConfig,

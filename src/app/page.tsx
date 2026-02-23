@@ -1,10 +1,8 @@
-import React from 'react'
+import { Button } from '@shared/ui/button'
 export default function Home() {
-  let lol = '1'
-  if (lol) lol = '2'
   return (
     <div>
-      <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+      <Button variant='outline'>Hello world</Button>
     </div>
   )
 }
