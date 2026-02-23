@@ -1,8 +1,15 @@
-import { Button } from '@shared/ui/button'
+import * as UI from '@shared/ui'
+import { Categories } from '@features/categories/ui'
+
 export default function Home() {
   return (
     <div>
-      <Button variant='outline'>Hello world</Button>
+      <UI.Container>
+        <UI.Title text='Hello world' size='2xl' />
+        <div>
+          <Categories />
+        </div>
+      </UI.Container>
     </div>
   )
 }
