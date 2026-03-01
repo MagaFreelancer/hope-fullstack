@@ -1,7 +1,7 @@
 import { Filters } from '@widgets/filters/ui'
 import * as UI from '@shared/ui'
 import { TopBar } from '@widgets/top-bar'
-
+import { Card } from '@entities/card/ui'
 export default function Home() {
   return (
     <div>
@@ -13,7 +13,15 @@ export default function Home() {
             <Filters />
           </div>
 
-          <div>Список товаров</div>
+          <div>
+            <Card
+              id={1}
+              name='Пепперони'
+              price={599}
+              imageUrl='https://media.dodostatic.net/image/r:584x584/019ac604bad37209b1ec496bbdd98560.avif'
+              className='w-[300px]'
+            />
+          </div>
         </div>
       </UI.Container>
     </div>
