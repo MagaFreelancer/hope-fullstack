@@ -19,7 +19,7 @@ const eslintConfig = defineConfig([
       eqeqeq: 'warn', //чтобы не забывать использовать строгое сравнение
       curly: ['error', 'all'], //чтобы не забывать использовать фигурные скобки в блоках if, else, for, while и do-while
       'no-else-return': 'warn', //чтобы не забывать удалять else после return
-
+      '@next/next/no-img-element': 'off', // разрешаем использовать <img> вместо <Image> для оптимизации производительности и удобства разработки
       // Архитектурные правила FSD
       'fsd-lint/no-public-api-sidestep': 'error',
       'fsd-lint/forbidden-imports': 'error',
