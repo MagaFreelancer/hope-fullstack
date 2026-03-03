@@ -8,7 +8,7 @@ const items = [
     id: 1,
     name: 'Пепперони',
     imageUrl:
-      'https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a7580507507.jpg',
+      'https://media.dodostatic.net/image/r:584x584/019a897c5ea574b889475bd98412de7b.avif',
     items: [
       {
         price: 395,
@@ -19,7 +19,7 @@ const items = [
     id: 2,
     name: 'Маргарита',
     imageUrl:
-      'https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/4a668c6e-733f-4a1b-9cfd-0c8e9e7680c8.jpg',
+      'https://media.dodostatic.net/image/r:584x584/0199b8e98ec871ab8a443887a3e1a136.avif',
     items: [
       {
         price: 345,
@@ -30,7 +30,7 @@ const items = [
     id: 3,
     name: 'Гавайская',
     imageUrl:
-      'https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/5c8e9e86-1a1b-4d9c-8e0f-2bdeeeae5a87.jpg',
+      'https://media.dodostatic.net/image/r:584x584/0198bf24170179679a7872f2ddf16d18.avif',
     items: [
       {
         price: 375,
@@ -49,8 +49,12 @@ export default function Home() {
             <Filters />
           </div>
 
-          <div>
-            <CardsGroupList title='Пицца' items={items} />
+          <div className='flex-1'>
+            <div className='flex flex-col gap-16'>
+              <CardsGroupList title='Пиццы' items={items} categoryId={1} />
+              <CardsGroupList title='Комбо' items={items} categoryId={2} />
+              <CardsGroupList title='Закуски' items={items} categoryId={3} />
+            </div>
           </div>
         </div>
       </UI.Container>
